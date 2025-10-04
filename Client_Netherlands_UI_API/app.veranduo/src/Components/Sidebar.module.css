@@ -1,0 +1,32 @@
+.sidebar_container {
+  padding-top: 50px;
+  border-right: 1px solid #e0e0e0;
+}
+
+.sidebar_menu_container {
+  margin-top: 50px;
+  overflow-x: hidden;
+  padding: 0 7px;
+}
+
+.menuLink {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+  padding: 12px 12px; /* 點擊區域變大 */
+}
+
+.menuLink:hover::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  width: 120%;
+  height: 100%;
+  background-color: #e7ffa4;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}

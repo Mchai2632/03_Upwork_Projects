@@ -1,0 +1,29 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 25px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar_user_container {
+  display: flex;
+}
+
+.navbar_user_image {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: green;
+  text-align: center;
+  line-height: 32px;
+}
+
+.navbar_user_name_role {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  justify-content: center;
+}
