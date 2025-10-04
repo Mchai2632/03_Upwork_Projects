@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import "react-tooltip/dist/react-tooltip.css";
 import style from "./layout.module.css";
 import Navbar from "@/Components/Navbar";
 import Sidebar from "@/Components/Sidebar";

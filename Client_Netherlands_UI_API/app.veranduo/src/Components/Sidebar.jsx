@@ -2,7 +2,7 @@ import React from "react";
 import style from "./Sidebar.module.css";
 import Image from "next/image";
 import { ICONS } from "@/constants/icons";
-import Link from "next/link";
+import SidebarItem from "./SidebarItem";
 
 const SidebarMenus = [
   { name: "Dashboard", link: "/", icon: ICONS.Dashboard },
@@ -22,11 +22,7 @@ export default function Sidebar() {
       </div>
       <ul className={style.sidebar_menu_container}>
         {SidebarMenus.map((menu, index) => (
-          <li key={index} className={style.menuItem}>
-            <Link href={menu.link} className={style.menuLink}>
-              <Image src={menu.icon} alt={menu.name} width={24} height={24} />
-            </Link>
-          </li>
+          <SidebarItem menu={menu} index={index} key={index} />
         ))}
       </ul>
     </div>
